@@ -12,6 +12,7 @@ type HeaderProps = {
 
 export const Header = ({ title, description, keywords }: HeaderProps): React.ReactElement => {
     const url = typeof window !== 'undefined' ? window.location.href : '';
+    const urlObject = new URL(window.location.href);
     const data = useStaticQuery(graphql`
         query IRCBPng {
             allFile(filter: { name: { eq: "ircb" } }) {
@@ -23,7 +24,7 @@ export const Header = ({ title, description, keywords }: HeaderProps): React.Rea
             }
         }
     `);
-    const imageUrl = data.allFile.edges[0].node.publicURL;
+    const imageUrl = `${urlObject.protocol}//${urlObject.host}${data.allFile.edges[0].node.publicURL}`;
     return (
         <Helmet>
             <html lang="en" amp />
