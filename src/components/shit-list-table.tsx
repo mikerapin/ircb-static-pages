@@ -13,48 +13,46 @@ export const ShitListTable = (): React.ReactElement => {
         return 0;
     });
     return (
-        <figure>
-            <table role="grid">
-                <thead>
-                    <tr role="row">
-                        <th
-                            data-column="0"
-                            tabIndex={0}
-                            scope="col"
-                            role="columnheader"
-                            aria-disabled="false"
-                            unselectable="on"
-                            aria-sort="ascending"
-                            aria-label="Name: Ascending"
-                            style={{ userSelect: 'none' }}>
-                            Name
-                        </th>
-                        <th
-                            data-column="1"
-                            scope="col"
-                            role="columnheader"
-                            aria-disabled="true"
-                            unselectable="on"
-                            aria-sort="none"
-                            aria-label="Source of the information"
-                            style={{ userSelect: 'none' }}>
-                            Source
-                        </th>
+        <table width="100%" role="grid">
+            <thead>
+                <tr role="row">
+                    <th
+                        data-column="0"
+                        tabIndex={0}
+                        scope="col"
+                        role="columnheader"
+                        aria-disabled="false"
+                        unselectable="on"
+                        aria-sort="ascending"
+                        aria-label="Name: Ascending"
+                        style={{ userSelect: 'none' }}>
+                        Name
+                    </th>
+                    <th
+                        data-column="1"
+                        scope="col"
+                        role="columnheader"
+                        aria-disabled="true"
+                        unselectable="on"
+                        aria-sort="none"
+                        aria-label="Source of the information"
+                        style={{ userSelect: 'none' }}>
+                        Source
+                    </th>
+                </tr>
+            </thead>
+            <tbody aria-live="polite" aria-relevant="all">
+                {shitListSorted.map(shitlist => (
+                    <tr key={shitlist.name} role="row">
+                        <td>{shitlist.name}</td>
+                        <td>
+                            <a href={shitlist.url} target="_blank" rel="noreferrer noopener">
+                                {shitlist.source}
+                            </a>
+                        </td>
                     </tr>
-                </thead>
-                <tbody aria-live="polite" aria-relevant="all">
-                    {shitListSorted.map(shitlist => (
-                        <tr key={shitlist.name} role="row">
-                            <td>{shitlist.name}</td>
-                            <td>
-                                <a href={shitlist.url} target="_blank" rel="noreferrer noopener">
-                                    {shitlist.source}
-                                </a>
-                            </td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-        </figure>
+                ))}
+            </tbody>
+        </table>
     );
 };

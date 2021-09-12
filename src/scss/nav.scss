@@ -1,0 +1,40 @@
+@import './util';
+
+nav {
+  margin: 15px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+@include generateWidth('.menu-list');
+
+.menu-list {
+  height: 130px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+
+  .nav-item {
+    list-style: none;
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 3rem);
+    text-align: center;
+
+    &.nft-list,
+    &.nav-logo {
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+
+  .menu-list {
+    height: auto;
+    flex-wrap: wrap;
+
+    .nav-item {
+      width: 100%;
+    }
+  }
+}

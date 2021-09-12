@@ -1,0 +1,27 @@
+@import './util';
+
+footer {
+  border-top: 1px #cccccc solid;
+}
+
+svg {
+  display: block;
+}
+
+@include generateWidth('.footer-content');
+
+.footer-content {
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+
+  .footer-content {
+    flex-flow: column;
+    padding: 20px 20px 0;
+  }
+}

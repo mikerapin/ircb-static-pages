@@ -1,0 +1,17 @@
+@import './normalize';
+@import './skeleton';
+@import './util';
+
+body {
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+tr {
+
+  &:hover {
+    background: #f9f9f9;
+  }
+}
+
+@include generateWidth(main);
