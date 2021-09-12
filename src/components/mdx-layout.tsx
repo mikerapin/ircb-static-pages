@@ -11,8 +11,7 @@ import { ShitListTable } from './shit-list-table';
 const shortcodes = { NameGuideTable, ShitListTable, Header };
 
 // eslint-disable-next-line react/display-name
-const MdxLayout = ({ data, children }: { children: React.ReactElement; data: any }): React.ReactElement => {
-    console.log(data);
+const MdxLayout = ({ children }: { children: React.ReactElement }): React.ReactElement => {
     return (
         <MDXProvider components={shortcodes}>
             <Layout>{children}</Layout>
