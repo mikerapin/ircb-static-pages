@@ -45,5 +45,20 @@ export const ShitListData = {
             source: 'HypeBeast',
             url: 'https://hypebeast.com/2021/4/stuart-semple-lovetone-nft-every-color',
         },
+        {
+            name: 'Scott Koblish',
+            source: 'PR Newswire',
+            url: 'https://www.prnewswire.com/news-releases/cryptocom-nft-signs-partnership-with-iconic-fantasy-science-fiction-and-horror-publisher-heavy-metal-301368688.html',
+        },
+        {
+            name: 'Walter Ostlie',
+            source: 'OpenSea',
+            url: 'https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/66813173825655676392049237938131537874814285236108768656468401924266363191297/',
+        },
+        {
+            name: 'Marvel Comics',
+            source: 'Marvel.com',
+            url: 'https://www.marvel.com/articles/gear/first-ever-marvel-digital-comic-collectibles-nft-veve',
+        },
     ],
 };
