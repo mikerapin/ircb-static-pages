@@ -17,6 +17,12 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
         openInNewTab: true,
     },
     {
+        className: 'home',
+        title: 'Home',
+        url: 'https://pages.ircbpodcast.com/',
+        openInNewTab: false,
+    },
+    {
         className: 'cb-guide',
         title: 'Comic Book Industry Name Pronunciation Guide',
         url: '/pronunciation-guide',
