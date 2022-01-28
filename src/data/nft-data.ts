@@ -60,5 +60,33 @@ export const ShitListData = {
             source: 'Marvel.com',
             url: 'https://www.marvel.com/articles/gear/first-ever-marvel-digital-comic-collectibles-nft-veve',
         },
+        {
+            name: 'Doug TenNapel',
+            source: 'CryptoArt',
+            url: 'https://cryptoart.io/artist/dougtennapel',
+        },
+        {
+            name: 'DC Comics',
+            source: 'DC Comics',
+            url: 'https://www.dccomics.com/blog/2021/09/29/dc-x-palm-nft-faqs',
+        },
+        {
+            name: 'HeavyMetal',
+            source: 'Medium',
+            url: 'https://medium.com/cryptocomnft/meet-the-legends-behind-heavy-metal-788cbbe18208',
+            new: true,
+        },
+        {
+            name: 'Valiant Comics',
+            source: 'ComicsBeat',
+            url: 'https://www.comicsbeat.com/valiant-comics-announces-prices-on-its-upcoming-nft-releases/',
+            new: true,
+        },
+        {
+            name: 'Rob Liefeld',
+            source: 'Hollywood Reporter',
+            url: 'https://www.hollywoodreporter.com/news/general-news/rob-liefeld-comic-defiants-nft-1235074307/',
+            new: true,
+        },
     ],
 };

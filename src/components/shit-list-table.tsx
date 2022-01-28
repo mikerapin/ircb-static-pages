@@ -44,7 +44,10 @@ export const ShitListTable = (): React.ReactElement => {
             <tbody aria-live="polite" aria-relevant="all">
                 {shitListSorted.map(shitlist => (
                     <tr key={shitlist.name} role="row">
-                        <td>{shitlist.name}</td>
+                        <td>
+                            {shitlist.new && <span className="new">NEW!</span>}
+                            {shitlist.name}
+                        </td>
                         <td>
                             <a href={shitlist.url} target="_blank" rel="noreferrer noopener">
                                 {shitlist.source}

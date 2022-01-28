@@ -14,4 +14,15 @@ tr {
   }
 }
 
+td {
+  position: relative;
+}
+
+.new {
+  position: absolute;
+  top: 5px;
+  font-size: 9px;
+  color: #f00;
+}
+
 @include generateWidth(main);
