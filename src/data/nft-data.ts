@@ -88,5 +88,11 @@ export const ShitListData = {
             url: 'https://www.hollywoodreporter.com/news/general-news/rob-liefeld-comic-defiants-nft-1235074307/',
             new: true,
         },
+        {
+            name: 'Todd McFarlane',
+            source: 'Insider',
+            url: 'https://www.businessinsider.com/todd-mcfarlane-creating-marvel-venom-comic-books-nfts-2022-1',
+            new: true,
+        },
     ],
 };
